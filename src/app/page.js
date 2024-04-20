@@ -1,0 +1,19 @@
+import Hero from "@/components/Hero/Hero";
+import Section1 from "@/components/Section/Section1";
+import Section2 from "@/components/Section/Section2";
+import Section3 from "@/components/Section/Section3";
+import Section4 from "@/components/Section/Section4";
+import Section5 from "@/components/Section/Section5";
+
+export default function Home() {
+  return (
+    <>
+      <Hero />
+      <Section1 />
+      <Section5 />
+      <Section2 />
+      <Section3 />
+      <Section4 />
+    </>
+  );
+}
