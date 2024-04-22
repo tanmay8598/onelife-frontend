@@ -2,13 +2,12 @@
 import { NAV_LINKS } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
-import Button from "../Button/Button";
 import { useState } from "react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className="w-full bg-bgLight">
+    <header className="w-full bg-bgLight sticky top-0 z-50">
       {/* nav top */}
       <div className="hidden lg:block bg-red h-[54px]">
         <div className="lg:nav-max-container lg:flexBetween h-[54px] ">
@@ -19,26 +18,33 @@ const Navbar = () => {
             </p>
           </div>
           <div className="flexCenter">
-            <Image src="/fb.png" alt="logo" width={20} height={20} />
+            <Image src="/fb1.png" alt="logo" width={25} height={25} />
             <Image
               src="/ig.png"
               alt="logo"
-              width={20}
-              height={20}
+              width={25}
+              height={25}
               className="ml-2"
             />
             <Image
-              src="/x.png"
+              src="/linkedin.png"
               alt="logo"
-              width={20}
-              height={20}
+              width={25}
+              height={25}
+              className="ml-2"
+            />
+            <Image
+              src="/yt.png"
+              alt="logo"
+              width={25}
+              height={25}
               className="ml-2 "
             />
           </div>
         </div>
       </div>
       {/* nav main  */}
-      <div className="flexBetween nav-max-container padding-container relative z-30 py-2 lg:py-5 ">
+      <nav className="flexBetween nav-max-container padding-container relative z-30 py-2 lg:py-5 ">
         <Link href="/">
           <Image src="/logo.png" alt="logo" width={172} height={76} />
         </Link>
@@ -66,7 +72,7 @@ const Navbar = () => {
           width={32}
           height={32}
           className="inline-block cursor-pointer lg:hidden"
-        />{" "}
+        />
         {/* mobile sidebar  */}
         <div
           className={
@@ -88,8 +94,8 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
   );
 };
 

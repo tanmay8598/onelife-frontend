@@ -101,66 +101,33 @@ const Footer = () => {
 
             {/* mobile  */}
             <div className="flex overflow-x-auto lg:hidden space-x-8">
-              <div className="flex-shrink-0 w-3/4">
-                {/* image  */}
-                <div className="relative w-full h-[200px] lg:w-[370px] lg:h-[206px]">
-                  <Image
-                    src="/blog/blog1.png"
-                    alt="blog"
-                    priority={true}
-                    fill={true}
-                  />
-                </div>
+              {getList?.map((blog) => {
+                return (
+                  <Link
+                    className="flex-shrink-0 w-3/4 text-black no-underline"
+                    href={`/blog/${blog?.slug}`}
+                    key={blog?._id}
+                  >
+                    {/* image  */}
+                    <div className="relative w-full h-[200px]">
+                      <Image
+                        src={blog?.image}
+                        alt="blog"
+                        priority={true}
+                        fill={true}
+                        objectFit="cover"
+                        objectPosition="center"
+                      />
+                    </div>
 
-                <p className="text-sm lg:text-base mt-2">
-                  The United Arab Emirates (UAE) is not just a cluster of
-                  glittering cities; it’s a playground for thrill-seekers
-                </p>
+                    <p className="text-sm lg:text-base ">{blog?.heading}</p>
 
-                <p className="font-semibold text-sm lg:text-base mt-2">
-                  Read Full Blog
-                </p>
-              </div>
-              <div className="flex-shrink-0 w-3/4">
-                {/* image  */}
-                <div className="relative w-full h-[200px] lg:w-[370px] lg:h-[206px]">
-                  <Image
-                    src="/blog/blog2.png"
-                    alt="blog"
-                    priority={true}
-                    fill={true}
-                  />
-                </div>
-
-                <p className="text-sm lg:text-base mt-2">
-                  The United Arab Emirates (UAE) is not just a cluster of
-                  glittering cities; it’s a playground for thrill-seekers
-                </p>
-
-                <p className="font-semibold text-sm lg:text-base mt-2">
-                  Read Full Blog
-                </p>
-              </div>
-              <div className="flex-shrink-0 w-3/4">
-                {/* image  */}
-                <div className="relative w-full h-[200px] lg:w-[370px] lg:h-[206px]">
-                  <Image
-                    src="/blog/blog3.png"
-                    alt="blog"
-                    priority={true}
-                    fill={true}
-                  />
-                </div>
-
-                <p className="text-sm lg:text-base mt-2">
-                  The United Arab Emirates (UAE) is not just a cluster of
-                  glittering cities; it’s a playground for thrill-seekers
-                </p>
-
-                <p className="font-semibold text-sm lg:text-base mt-2">
-                  Read Full Blog
-                </p>
-              </div>
+                    <p className="font-semibold text-sm lg:text-base mt-2">
+                      Read Full Blog
+                    </p>
+                  </Link>
+                );
+              })}
             </div>
             {/* button  */}
             <div className="w-[220px] lg:mt-10">
@@ -227,14 +194,14 @@ const Footer = () => {
                 <p className="font-pacifico text-orange text-xl lg:text-3xl">
                   Let’s Be Friend
                 </p>
-                <div className="mt-2 lg:mt-7">
+                <div className="mt-2 lg:mt-7 w-full flex gap-6 items-center justify-center">
                   <Image src="/icons/fb.png" height={50} width={50} />
-                  <Image src="/icons/twitter.png" height={50} width={50} />
-                  <Image src="/icons/tiktok.png" height={50} width={50} />
+                  <Image src="/icons/linkedin.png" height={50} width={50} />
+
                   <Image src="/icons/ig.png" height={50} width={50} />
                   <Image src="/icons/yt.png" height={50} width={50} />
                 </div>
-                <div className="flex mt-5 items-center justify-center">
+                <div className="flex mt-8 items-center justify-center">
                   <Image
                     src="/icons/call1.png"
                     height={48}

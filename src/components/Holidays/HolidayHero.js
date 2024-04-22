@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const HolidayHero = () => {
   return (
-    <section className="bg-visa-bg bg-cover bg-center bg-no-repeat">
+    <section className="bg-holiday-bg1 bg-cover bg-right-bottom bg-no-repeat">
       <div className="flex relative flex-col  mx-auto max-w-screen-2xl px-4 py-10 sm:px-6 lg:flex lg:h-screen lg:px-8 ">
         <p className="text-4xl mt-2 font-bold lg:text-7xl  lg:mt-[150px] leading-none">
           Find Your Perfect Holiday Package Here!
