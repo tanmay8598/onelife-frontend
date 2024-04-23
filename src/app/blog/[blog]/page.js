@@ -9,6 +9,7 @@ export async function generateMetadata({ params }) {
   return {
     title: data?.mtitle,
     description: data?.mdesc,
+    metadataBase: new URL(data?.image),
   };
 }
 

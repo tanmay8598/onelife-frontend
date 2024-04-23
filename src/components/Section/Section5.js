@@ -4,7 +4,7 @@ import React from "react";
 const Section5 = () => {
   return (
     <section className="relative flex lg:h-full bg-home-bg1-mobile lg:bg-home-bg1 bg-cover bg-center bg-no-repeat lg:mt-20">
-      <div className="absolute lg:hidden inset-0  bg-black/60"></div>
+      {/* <div className="absolute lg:hidden inset-0  bg-black/60"></div> */}
       <div className="flex flex-col relative mx-auto max-w-screen-2xl px-4 py-32 sm:px-6 lg:flex  lg:px-8">
         {/* heading  */}
         <div>

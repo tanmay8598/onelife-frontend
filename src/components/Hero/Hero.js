@@ -42,7 +42,7 @@ const Hero = () => {
     <section
       className={`relative lg:h-[870px] ${returnPhotoURL()} bg-cover bg-center bg-no-repeat transition-all duration-500`}
     >
-      <div className="absolute inset-0  bg-black/20"></div>
+      {/* <div className="absolute inset-0  bg-black/20"></div> */}
 
       <div className="flex flex-col relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen/2 lg:items-center lg:px-8">
         <div className="w-full text-center">

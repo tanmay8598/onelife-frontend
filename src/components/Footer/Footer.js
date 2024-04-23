@@ -157,13 +157,14 @@ const Footer = () => {
               Al Khaleej Center - 7th Floor, Office# 714 - Al Mankhool Rd -
               Bur Dubai, Dubai |
               <a
+                target="_blank"
                 className="text-orange ml-2 underline font-semibold"
                 href="https://maps.app.goo.gl/jyJqmqFSRtHWFfs36"
               >
                 Locate US On Map
               </a>
             </p>
-            <a href={link}>
+            <a href={link} target="_blank">
               <Image
                 src="/section/footer-map.png"
                 alt="map"
@@ -208,9 +209,12 @@ const Footer = () => {
                     width={48}
                     className="h-7 w-7 lg:h-[42px] lg:w-[42px]"
                   />
-                  <p className="text-orange font-bold text-lg lg:text-[32px] lg:ml-2">
+                  <a
+                    href="tel:+971547082256"
+                    className="text-orange font-bold text-lg lg:text-[32px] lg:ml-2 no-underline"
+                  >
                     (+971) 54 708 2256
-                  </p>
+                  </a>
                 </div>
               </div>
               <div className="hidden lg:block h-[330px] w-[1px] bg-gray-30" />

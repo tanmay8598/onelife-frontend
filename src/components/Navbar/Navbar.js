@@ -44,6 +44,7 @@ const Navbar = () => {
         </div>
       </div>
       {/* nav main  */}
+
       <nav className="flexBetween nav-max-container padding-container relative z-30 py-2 lg:py-5 ">
         <Link href="/">
           <Image src="/logo.png" alt="logo" width={172} height={76} />
@@ -61,9 +62,12 @@ const Navbar = () => {
         </ul>
         <div className="lg:flexCenter hidden">
           <Image src="/phone.svg" alt="logo" width={20} height={20} />
-          <p className="text-lg font-bold text-black ml-2">
-            (+971) 541 -265 -234
-          </p>
+          <a
+            href="tel:+971547082256"
+            className="text-lg font-bold text-black ml-2 no-underline"
+          >
+            (+971) 54-708-2256
+          </a>
         </div>
         <Image
           onClick={() => setIsOpen(!isOpen)}
@@ -77,21 +81,35 @@ const Navbar = () => {
         <div
           className={
             isOpen
-              ? "fixed md:hidden left-0 top-0 w-[80%] h-full border-r border-r-gray-900 bg-white  ease-in-out duration-500"
+              ? "fixed md:hidden left-0 top-0 w-[80%] h-full border-r border-r-gray-900 bg-bgLight ease-in-out duration-500"
               : "ease-in-out w-[60%] duration-500 fixed top-0 bottom-0 left-[-100%]"
           }
         >
           <ul className=" h-full gap-4 flex flex-col p-5 ">
+            <Link href="/">
+              <Image src="/logo.png" alt="logo" width={172} height={76} />
+            </Link>
+
             {NAV_LINKS.map((link) => (
               <Link
                 onClick={() => setIsOpen(!isOpen)}
                 href={link.href}
                 key={link.key}
-                className="text-lg font-semibold text-darkBlue  cursor-pointer  transition-all  no-underline border-b-2 border-gray-20"
+                className="text-lg font-semibold text-darkBlue  cursor-pointer  transition-all py-2  no-underline border-0 border-b-[1px] border-solid border-gray-30"
               >
                 {link.label}
               </Link>
             ))}
+
+            <div className="text-lg font-semibold flex items-center text-darkBlue  cursor-pointer  transition-all py-2  no-underline border-0 border-b-[1px] border-solid border-gray-30">
+              <Image src="/phone.svg" alt="logo" width={20} height={20} />
+              <a
+                href="tel:+971547082256"
+                className="text-lg text-darkBlue  ml-2 no-underline"
+              >
+                (+971) 54-708-2256
+              </a>
+            </div>
           </ul>
         </div>
       </nav>

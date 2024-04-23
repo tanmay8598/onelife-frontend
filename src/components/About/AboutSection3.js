@@ -76,9 +76,12 @@ const AboutSection3 = () => {
                 width={48}
                 className="h-7 w-7 lg:h-[48px] lg:w-[48px]"
               />
-              <p className="text-yellow font-bold lg:text-[38px]">
+              <a
+                href="tel:+971547082256"
+                className="text-yellow font-bold lg:text-[38px] no-underline"
+              >
                 (+971) 54 708 2256
-              </p>
+              </a>
             </div>
           </div>
         </div>

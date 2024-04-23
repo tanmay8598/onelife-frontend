@@ -41,23 +41,29 @@ module.exports = withMT({
         darkBlue: {
           DEFAULT: "#021a58",
         },
+        bgRedInset: {
+          DEFAULT: "#222222",
+        },
       },
       backgroundImage: {
-        "bg-img-1": "url('/travel-slide-01.jpg')",
-        "bg-img-2": "url('/travel-slide-02.jpg')",
-        "bg-img-3": "url('/travel-slide-03.jpg')",
-        "bg-img-4": "url('/travel-slide-04.jpg')",
+        "bg-img-1":
+          "linear-gradient(to bottom, rgba(0,0,0,0) ,80%, rgba(1,1,1,1)), url('/travel-slide-01.jpg')",
+        "bg-img-2":
+          "linear-gradient(to bottom, rgba(0,0,0,0) ,80%, rgba(1,1,1,1)), url('/travel-slide-02.jpg')",
+        "bg-img-3":
+          "linear-gradient(to bottom, rgba(0,0,0,0) ,80%, rgba(1,1,1,1)), url('/travel-slide-03.jpg')",
+        "bg-img-4":
+          "linear-gradient(to bottom, rgba(0,0,0,0) ,80%,rgba(1,1,1,1)), url('/travel-slide-04.jpg')",
         "uae-visa":
           "linear-gradient(to right, rgba(1,1,1,1) ,20%, rgba(0, 0, 0, 0) 50%), url('/uae-passport.png')",
-        // "uae-visa": "url('/uae-passport.png')",
         "uae-activities":
           "linear-gradient(to right, rgba(1,1,1,1) ,20%, rgba(0, 0, 0, 0) 50%), url('/activities.png')",
-        // "uae-activities": "url('/activities.png')",
         "uae-holidays":
           "linear-gradient(to right, rgba(1,1,1,1) ,20%, rgba(0, 0, 0, 0) 50%), url('/holidays.png')",
-        // "uae-holidays": "url('/holidays.png')",
         "section1-video": "url('/section/section1-video.png')",
-        "section2-bg": "url('/section/bg-img-11.jpg')",
+        "section2-bg":
+          "linear-gradient(to right,rgba(0,18,81,0.2),20%, rgba(0, 22, 78, 0.1) ), url('/section/bg-img-11.jpg')",
+        // "section2-bg": "url('/section/bg-img-11.jpg')",
         "landing-bg": "url('/section/landing-bg.png')",
         "visa-bg": "url('/visaHero.png')",
         "visa-schengen": "url('/visa/schengen.png')",
@@ -88,7 +94,7 @@ module.exports = withMT({
         "b2b-bg": "url('/b2b/bg.png')",
         "home-bg1-mobile": "url('/home/bg1.png')",
         "home-bg1":
-          "linear-gradient(to right, rgba(1,1,1,1) ,30%, rgba(0, 0, 0, 0) 50%), url('/home/bg1.png')",
+          "linear-gradient(to right, rgba(1,1,1,1) ,31%, rgba(0, 0, 0, 0)), url('/home/bg1.png')",
       },
       textShadow: {
         sm: "0 1px 2px var(--tw-shadow-color)",

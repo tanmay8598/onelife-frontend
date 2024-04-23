@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Section1 = () => {
@@ -128,7 +129,10 @@ const Section1 = () => {
         {/* bottom cards */}
 
         <div className="flex flex-wrap gap-5 mt-10 lg:mt-[100px] ">
-          <div className="relative flex flex-col justify-center w-full bg-uae-visa bg-opacity-85 h-[100px]  px-5 lg:py-20   lg:w-[383px] bg-cover bg-no-repeat rounded-lg text-white p-1 text-center lg:text-left">
+          <Link
+            href="/visa"
+            className="no-underline relative flex flex-col justify-center w-full bg-uae-visa bg-opacity-85 h-[100px]  px-5 lg:py-20   lg:w-[383px] bg-cover bg-no-repeat rounded-lg text-white p-1 text-center lg:text-left"
+          >
             {/* <div className="absolute  inset-0  bg-black/10"></div> */}
             <p className="text-lg lg:text-2xl font-semibold">
               Visa Consultation
@@ -136,19 +140,25 @@ const Section1 = () => {
             <p className="font-semibold text-[14px] lg:w-[275px]">
               Consultation for 40+ countries. Trusted by 8k+ travellers
             </p>
-          </div>
-          <div className="flex flex-col justify-center w-full bg-uae-activities h-[100px]  px-5 lg:py-20   lg:w-[383px] bg-cover bg-no-repeat rounded-lg text-white p-1 text-center lg:text-left">
+          </Link>
+          <Link
+            href="/activities"
+            className="no-underline flex flex-col justify-center w-full bg-uae-activities h-[100px]  px-5 lg:py-20   lg:w-[383px] bg-cover bg-no-repeat rounded-lg text-white p-1 text-center lg:text-left"
+          >
             <p className="text-lg lg:text-2xl font-semibold">Activities</p>
             <p className="font-semibold text-[14px] lg:w-[275px]">
               Uncover amazing adventures with top deals and save big!
             </p>
-          </div>
-          <div className="flex flex-col justify-center w-full bg-uae-holidays h-[100px]  px-5 lg:py-20   lg:w-[383px] bg-cover bg-no-repeat rounded-lg text-white p-1 text-center lg:text-left">
+          </Link>
+          <Link
+            href="/holidays"
+            className="no-underline flex flex-col justify-center w-full bg-uae-holidays h-[100px]  px-5 lg:py-20   lg:w-[383px] bg-cover bg-no-repeat rounded-lg text-white p-1 text-center lg:text-left"
+          >
             <p className="text-lg lg:text-2xl font-semibold">Holidays</p>
             <p className="font-semibold text-[14px] lg:w-[275px]">
               Craft an extraordinary travel wishlist with our curated packages.
             </p>
-          </div>
+          </Link>
         </div>
       </div>
     </section>

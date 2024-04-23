@@ -74,7 +74,8 @@ const AcitivitySection1 = () => {
       {/* middle section  */}
 
       <div className="relative bg-activity-bg bg-cover bg-center bg-no-repeat mt-20 lg:mt-40 py-20 lg:h-screen flex flex-col items-center justify-center">
-        <div>
+        <div className="absolute inset-0  bg-bgRedInset/30"></div>
+        <div className="relative">
           <p className="text-white font-pacifico lg:text-3xl text-center">
             Featured
           </p>
