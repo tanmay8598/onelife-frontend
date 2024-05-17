@@ -28,7 +28,35 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${poppins.variable} ${pacifico.variable}`}>
         <link rel="icon" href="/favicon.png" sizes="any" />
+
         <Navbar />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "mc9nk012sa");
+                  `,
+          }}
+        />
+
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-GXBCNE9S1K"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GXBCNE9S1K');
+                  `,
+          }}
+        />
         {children}
         <Footer />
       </body>

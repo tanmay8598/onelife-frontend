@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Section4 = () => {
@@ -38,10 +39,12 @@ const Section4 = () => {
                     <p className="text-xl ">Shweta Vatyani</p>
                     <div className="flex  items-center">
                       <p className="text-sm lg:text-md">as reviewed on</p>
-                      <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/800px-Google_2015_logo.svg.png"
-                        className="h-4 w-auto mt-1 ml-1"
-                      />
+                      <Link href="https://maps.app.goo.gl/kXUh3eeHKDHZ4eqj7">
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/800px-Google_2015_logo.svg.png"
+                          className="h-4 w-auto mt-2 ml-1"
+                        />
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -61,10 +64,12 @@ const Section4 = () => {
                     <p className="text-xl">Colin Lynam</p>
                     <div className="flex  items-center">
                       <p className="text-sm lg:text-md">as reviewed on</p>
-                      <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/800px-Google_2015_logo.svg.png"
-                        className="h-4 w-auto mt-1 ml-1"
-                      />
+                      <Link href="https://maps.app.goo.gl/kXUh3eeHKDHZ4eqj7">
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/800px-Google_2015_logo.svg.png"
+                          className="h-4 w-auto mt-2 ml-1"
+                        />
+                      </Link>
                     </div>
                   </div>
                 </div>

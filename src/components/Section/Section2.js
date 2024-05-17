@@ -20,33 +20,49 @@ const Section2 = () => {
     <section className="bg-white lg:mt-28">
       <div className="relative flex flex-col  mx-auto max-w-screen-2xl px-4 py-10 sm:px-6 lg:flex lg:h-screen lg:px-8 lg:mt-20 lg:mb-20">
         <p className="text-orange font-pacifico lg:text-[36px]">Destinations</p>
-        <p className="text-3xl mt-2 font-extrabold lg:text-[50px] lg:w-[70%] lg:mt-[30px] leading-none">
+        <p className="text-3xl mt-2 font-extrabold lg:text-[40px] lg:w-[70%] lg:mt-[10px] leading-none">
           The UAE Experience !
         </p>
-        <p className="text-sm mt-5 text-justify lg:w-[65%] lg:text-lg">
+        <p className="text-sm mt-5 text-justify lg:w-[33%] lg:text-lg">
           Uncover the finest sights and experiences awaiting you in the vibrant
           capital city of the UAE.
         </p>
-        <div className="flex flex-wrap lg:mt-5">
-          <a
-            href="/activities"
-            className="text-center tracking-wide border-2 border-black border-solid block mt-5 lg:mt-0  rounded bg-white px-12 py-3 text-sm font-extrabold  focus:outline-none focus:ring  sm:w-auto no-underline text-black lg:text-md "
-          >
-            View All Packages
-            <Image src="/arrow.png" height={9} width={8} className="ml-1" />
-          </a>
+
+        <p className="lg:text-3xl font-bold mt-5">
+          Authorized Reseller Partner for
+        </p>
+        <div className="hidden lg:flex z-10   items-center justify-center lg:justify-start flex-wrap gap-5 lg:gap-7 mt-10">
+          <Image src="/activities/ll1.png" height={68} width={161} />
+          <Image src="/activities/ll2.png" height={79} width={159} />
+          <Image src="/activities/mg.png" height={68} width={191} />
+          <Image src="/activities/realMadrid.png" height={74} width={137} />
         </div>
-        <div className="hidden lg:flex z-10   items-center justify-center lg:justify-start flex-wrap gap-5 lg:gap-10 mt-20">
-          <Image src="/section/section1-1.png" height={214} width={214} />
-          <Image src="/section/section1-2.png" height={214} width={214} />
-          <Image src="/section/section1-3.png" height={214} width={214} />
-          <Image src="/section/section1-4.png" height={214} width={214} />
+        <div className="hidden lg:flex z-10   items-center justify-center lg:justify-start flex-wrap gap-5 lg:gap-10 mt-10">
+          <Image src="/activities/ww.png" height={110} width={160} />
+          <Image src="/activities/dp.png" height={92} width={136} />
+          <Image src="/activities/burj.png" height={115} width={120} />
+          <Image src="/activities/greenPlanet.png" height={67} width={215} />
         </div>
         <div className="lg:hidden flex items-center justify-center lg:justify-start flex-wrap gap-5 lg:gap-10 mt-10">
-          <Image src="/section/section1-1.png" height={150} width={150} />
-          <Image src="/section/section1-2.png" height={150} width={150} />
-          <Image src="/section/section1-3.png" height={150} width={150} />
-          <Image src="/section/section1-4.png" height={150} width={150} />
+          <Image src="/activities/ll1.png" height={68} width={161} />
+          <Image src="/activities/ll2.png" height={79} width={159} />
+          <Image src="/activities/mg.png" height={68} width={191} />
+          <Image src="/activities/realMadrid.png" height={74} width={137} />
+          <Image src="/activities/ww.png" height={110} width={160} />
+          <Image src="/activities/dp.png" height={92} width={136} />
+          <Image src="/activities/burj.png" height={115} width={120} />
+          <Image src="/activities/greenPlanet.png" height={67} width={215} />
+        </div>
+        <div className="flex items-center justify-center lg:justify-start flex-wrap gap-5 lg:gap-10 mt-10">
+          <div className="flex flex-wrap lg:mt-5">
+            <a
+              href="/activities"
+              className="text-center tracking-wide border-2 border-black border-solid block mt-5 lg:mt-0  rounded bg-white px-12 py-3 text-sm font-extrabold  focus:outline-none focus:ring  sm:w-auto no-underline text-black lg:text-md "
+            >
+              Talk To us for Great deals
+              <Image src="/arrow.png" height={9} width={8} className="ml-1" />
+            </a>
+          </div>
         </div>
 
         <div className="hidden lg:block absolute right-0">
@@ -63,15 +79,6 @@ const Section2 = () => {
               />
             </Waypoint>
           </div>
-          {/* <div className="relative">
-            <Image src="/section/section1-video.png" height={600} width={389} />
-            <Image
-              src="/section/section1-play.png"
-              height={100}
-              width={100}
-              className="absolute m-auto left-0 right-0 top-0 bottom-0 cursor-pointer"
-            />
-          </div> */}
         </div>
       </div>
     </section>

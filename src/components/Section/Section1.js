@@ -15,7 +15,7 @@ const Section1 = () => {
         </p>
 
         <p className="text-sm mt-5 text-justify lg:w-[65%] lg:text-lg">
-          we pride ourselves on offering a comprehensive range of services
+          We pride ourselves on offering a comprehensive range of services
           tailored to meet every traveler's needs. From expert visa consultation
           services ensuring hassle-free travel arrangements to organizing
           thrilling and memorable activities at destinations worldwide, we are
@@ -131,9 +131,8 @@ const Section1 = () => {
         <div className="flex flex-wrap gap-5 mt-10 lg:mt-[100px] ">
           <Link
             href="/visa"
-            className="no-underline relative flex flex-col justify-center w-full bg-uae-visa bg-opacity-85 h-[100px]  px-5 lg:py-20   lg:w-[383px] bg-cover bg-no-repeat rounded-lg text-white p-1 text-center lg:text-left"
+            className="no-underline relative flex flex-col justify-center w-full bg-uae-visa  h-[100px]  px-5 lg:py-20   lg:w-[383px] bg-cover bg-no-repeat rounded-lg text-white p-1 text-center lg:text-left opacity-90 hover:opacity-100 "
           >
-            {/* <div className="absolute  inset-0  bg-black/10"></div> */}
             <p className="text-lg lg:text-2xl font-semibold">
               Visa Consultation
             </p>
@@ -143,7 +142,7 @@ const Section1 = () => {
           </Link>
           <Link
             href="/activities"
-            className="no-underline flex flex-col justify-center w-full bg-uae-activities h-[100px]  px-5 lg:py-20   lg:w-[383px] bg-cover bg-no-repeat rounded-lg text-white p-1 text-center lg:text-left"
+            className="no-underline flex flex-col justify-center w-full bg-uae-activities h-[100px]  px-5 lg:py-20   lg:w-[383px] bg-cover bg-no-repeat rounded-lg text-white p-1 text-center lg:text-left opacity-90 hover:opacity-100"
           >
             <p className="text-lg lg:text-2xl font-semibold">Activities</p>
             <p className="font-semibold text-[14px] lg:w-[275px]">
@@ -152,7 +151,7 @@ const Section1 = () => {
           </Link>
           <Link
             href="/holidays"
-            className="no-underline flex flex-col justify-center w-full bg-uae-holidays h-[100px]  px-5 lg:py-20   lg:w-[383px] bg-cover bg-no-repeat rounded-lg text-white p-1 text-center lg:text-left"
+            className="no-underline flex flex-col justify-center w-full bg-uae-holidays h-[100px]  px-5 lg:py-20   lg:w-[383px] bg-cover bg-no-repeat rounded-lg text-white p-1 text-center lg:text-left opacity-90 hover:opacity-100"
           >
             <p className="text-lg lg:text-2xl font-semibold">Holidays</p>
             <p className="font-semibold text-[14px] lg:w-[275px]">

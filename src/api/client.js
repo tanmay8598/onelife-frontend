@@ -2,8 +2,7 @@ import { create } from "apisauce";
 
 const apiClient = create({
   // baseURL: "http://localhost:5000/api",
-  baseURL: "http://13.201.86.117/api",
-  // baseURL: "https://backend.rbtourism.com/api/",
+  baseURL: "https://backend.onelifetourism.com/api",
   headers: { Accept: "application/vnd.github.v3+json" },
 });
 
@@ -16,7 +15,5 @@ if (typeof window !== "undefined") {
     request.headers["x-auth-token"] = authToken;
   });
 }
-
-// console.log('hi')
 
 export default apiClient;

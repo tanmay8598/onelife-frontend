@@ -50,7 +50,7 @@ const page = () => {
   const link =
     "https://www.google.com/maps/place/Al+Khaleej+Center/@25.2578173,55.294199,17.47z/data=!4m6!3m5!1s0x3e5f433c5aa7287d:0x460b315b0d606c13!8m2!3d25.257195!4d55.2957318!16s%2Fg%2F11b7hd_871?entry=tts";
   return (
-    <div className="mx-auto max-w-screen-xl  py-10 px-3  lg:h-full  lg:mb-40 lg:mt-20">
+    <div className="mx-auto max-w-screen-xl w-full  py-10 px-3  lg:h-full  lg:mb-40 lg:mt-20">
       <ToastContainer />
       {/* heading  */}
       <div className="w-full text-center">
@@ -72,8 +72,30 @@ const page = () => {
               width={32}
               className="h-7 w-7 lg:h-[28px] lg:w-[28px] mr-5"
             />
-            <p className="text-lg lg:text-[28px] lg:ml-2 font-medium">
-              (+971) 54 708 2256
+            <p className="text-lg lg:text-[22px]  font-medium">
+              Visa Related: (+971) 54 708 2256
+            </p>
+          </div>
+          <div className="flex  mt-2 lg:mt-5 items-center w-full">
+            <Image
+              src="/icons/call1.png"
+              height={32}
+              width={32}
+              className="h-7 w-7 lg:h-[28px] lg:w-[28px] mr-5"
+            />
+            <p className="text-lg lg:text-[22px]  font-medium">
+              Holidays Related: (+971) 501089562
+            </p>
+          </div>
+          <div className="flex  mt-2 lg:mt-5 items-center w-full">
+            <Image
+              src="/icons/call1.png"
+              height={32}
+              width={32}
+              className="h-7 w-7 lg:h-[28px] lg:w-[28px] mr-5"
+            />
+            <p className="text-lg lg:text-[22px]  font-medium">
+              For Other Enquiries: (+971) 547082256
             </p>
           </div>
           <div className="flex mt-5 lg:mt-10 items-center">
@@ -83,11 +105,11 @@ const page = () => {
               width={32}
               className="h-7 w-7 lg:h-[28px] lg:w-[28px] mr-5"
             />
-            <p className="text-lg lg:text-[28px] lg:ml-2 font-medium">
+            <p className="text-lg lg:text-[22px] lg:ml-2 font-medium">
               info@onelifetourism.com
             </p>
           </div>
-          <p className="text-lg lg:text-[28px] mt-5 leading-10  mb-2 lg:w-3/4">
+          <p className="text-lg lg:text-[22px] mt-5 leading-10  mb-2 lg:w-3/4">
             Al Khaleej Center - 7th Floor, Office# 714 - Al Mankhool Rd -
             Bur Dubai, Dubai
           </p>
@@ -109,9 +131,9 @@ const page = () => {
 
         {/* right  */}
 
-        <div className="w-full h-full  flex flex-col items-center justify-center ">
+        <div className="w-full  p-0 flex flex-col items-center justify-center ">
           {/* form  */}
-          <div className="w-full   mt-10 lg:mt-0 pb-10 lg:pb-0">
+          <div className="w-full mt-10 lg:mt-0 pb-10 lg:pb-0">
             <p className="text-2xl lg:text-3xl font-bold">Enquire</p>
             <form onSubmit={handleSubmit}>
               <div className="flex flex-col mt-5">
@@ -184,15 +206,16 @@ const page = () => {
           </div>
         </div>
       </div>
-      <a href={link}>
-        <Image
-          src="/icons/contactus-map.png"
-          alt="map"
-          height={2000}
-          width={2000}
-          className="w-full object-cover h-[300px] lg:h-[500px] lg:mt-20"
-        />
-      </a>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.40115827738!2d55.2954873!3d25.257087299999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f432be4ecef23%3A0x651a12c9b4fa47ea!2sOne%20Life%20Tourism!5e0!3m2!1sen!2sin!4v1715855473710!5m2!1sen!2sin"
+        width="full"
+        height="450"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        className="lg:mt-10 mt-5 w-full"
+      ></iframe>
     </div>
   );
 };

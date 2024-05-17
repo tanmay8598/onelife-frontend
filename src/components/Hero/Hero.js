@@ -27,20 +27,21 @@ const Hero = () => {
   const returnPhotoURL = () => {
     switch (photo) {
       case 1:
-        return "bg-bg-img-1";
+        return "bg-bg-img-1 transition duration-500 ";
       case 2:
-        return "bg-bg-img-2";
+        return "bg-bg-img-2 transition duration-500";
       case 3:
-        return "bg-bg-img-3";
+        return "bg-bg-img-3 transition duration-500";
       case 4:
-        return "bg-bg-img-4";
+        return "bg-bg-img-4 transition duration-500";
       default:
-        return "bg-bg-img-1";
+        return "bg-bg-img-1 transition duration-500";
     }
   };
+
   return (
     <section
-      className={`relative lg:h-[870px] ${returnPhotoURL()} bg-cover bg-center bg-no-repeat transition-all duration-500`}
+      className={`relative lg:h-[870px] ${returnPhotoURL()} bg-cover bg-center bg-no-repeat ease-in-out`}
     >
       {/* <div className="absolute inset-0  bg-black/20"></div> */}
 

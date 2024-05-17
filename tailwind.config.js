@@ -4,6 +4,12 @@ const plugin = require("tailwindcss/plugin");
 const withMT = require("@material-tailwind/react/utils/withMT");
 
 module.exports = withMT({
+  purge: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -43,6 +49,9 @@ module.exports = withMT({
         },
         bgRedInset: {
           DEFAULT: "#222222",
+        },
+        bgSkin: {
+          DEFAULT: "#F8F8F8",
         },
       },
       backgroundImage: {

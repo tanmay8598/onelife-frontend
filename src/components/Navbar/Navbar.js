@@ -2,44 +2,71 @@
 import { NAV_LINKS } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+
+  const handleScroll = () => {
+    const scroll = window.scrollY;
+
+    const shouldBeVisible = scroll <= 50;
+    setIsVisible(shouldBeVisible);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <header className="w-full bg-bgLight sticky top-0 z-50">
       {/* nav top */}
-      <div className="hidden lg:block bg-red h-[54px]">
-        <div className="lg:nav-max-container lg:flexBetween h-[54px] ">
-          <div className="flexCenter">
+      <div
+        className={`hidden bg-red h-[54px] top-0 z-10 transition-all  ease-in-out duration-200 ${
+          isVisible ? "lg:block" : "hidden"
+        }`}
+      >
+        {/* <div className="hidden lg:block bg-red h-[54px]"> */}
+        <div className="lg:nav-max-container lg:flexBetween h-[50px] ">
+          <div className="flexCenter ">
             <Image src="/mail.png" alt="logo" width={20} height={20} />
-            <p className="text-md font-regular text-white ml-2">
+            <p className="text-sm font-regular text-white ml-2">
               info@onelifetourism.com
             </p>
           </div>
-          <div className="flexCenter">
-            <Image src="/fb1.png" alt="logo" width={25} height={25} />
-            <Image
-              src="/ig.png"
-              alt="logo"
-              width={25}
-              height={25}
-              className="ml-2"
-            />
-            <Image
-              src="/linkedin.png"
-              alt="logo"
-              width={25}
-              height={25}
-              className="ml-2"
-            />
-            <Image
-              src="/yt.png"
-              alt="logo"
-              width={25}
-              height={25}
-              className="ml-2 "
-            />
+          <div className="flexCenter mt-2">
+            <Link href="https://www.facebook.com/onelifetourism">
+              <Image src="/fb1.png" alt="logo" width={25} height={25} />
+            </Link>
+            <Link href="https://www.instagram.com/one_life_tourism/">
+              <Image
+                src="/ig.png"
+                alt="logo"
+                width={25}
+                height={25}
+                className="ml-2"
+              />
+            </Link>
+            <Link href="https://www.linkedin.com/company/onelifetourism">
+              <Image
+                src="/linkedin.png"
+                alt="logo"
+                width={25}
+                height={25}
+                className="ml-2"
+              />
+            </Link>
+            <Link href="https://www.youtube.com/channel/UCwdyYkY5eVkhNYAB6Imx3Xw">
+              <Image
+                src="/yt.png"
+                alt="logo"
+                width={25}
+                height={25}
+                className="ml-2 "
+              />
+            </Link>
           </div>
         </div>
       </div>
@@ -64,7 +91,7 @@ const Navbar = () => {
           <Image src="/phone.svg" alt="logo" width={20} height={20} />
           <a
             href="tel:+971547082256"
-            className="text-lg font-bold text-black ml-2 no-underline"
+            className="text-lg font-bold text-darkBlue hover:text-orange ml-2 no-underline"
           >
             (+971) 54-708-2256
           </a>
@@ -101,11 +128,11 @@ const Navbar = () => {
               </Link>
             ))}
 
-            <div className="text-lg font-semibold flex items-center text-darkBlue  cursor-pointer  transition-all py-2  no-underline border-0 border-b-[1px] border-solid border-gray-30">
+            <div className="text-lg font-semibold flex items-center text-darkBlue hover:text-orange cursor-pointer  transition-all py-2  no-underline border-0 border-b-[1px] border-solid border-gray-30">
               <Image src="/phone.svg" alt="logo" width={20} height={20} />
               <a
                 href="tel:+971547082256"
-                className="text-lg text-darkBlue  ml-2 no-underline"
+                className="text-lg text-darkBlue hover:text-orange  ml-2 no-underline"
               >
                 (+971) 54-708-2256
               </a>

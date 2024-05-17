@@ -164,15 +164,15 @@ const Footer = () => {
                 Locate US On Map
               </a>
             </p>
-            <a href={link} target="_blank">
-              <Image
-                src="/section/footer-map.png"
-                alt="map"
-                height={2000}
-                width={2000}
-                className="h-[200px] w-full lg:h-[265px]    lg:mt-20 object-cover"
-              />
-            </a>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.40115827738!2d55.2954873!3d25.257087299999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f432be4ecef23%3A0x651a12c9b4fa47ea!2sOne%20Life%20Tourism!5e0!3m2!1sen!2sin!4v1715855473710!5m2!1sen!2sin"
+              width="full"
+              height="450"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              className="lg:mt-10 mt-5"
+            ></iframe>
             {/* <a
           href="#"
           className="relative h-[200px] w-full lg:h-[265px]  lg:w-[1171px]  cursor-pointer mt-2 lg:mt-10"
@@ -196,11 +196,18 @@ const Footer = () => {
                   Let’s Be Friend
                 </p>
                 <div className="mt-2 lg:mt-7 w-full flex gap-6 items-center justify-center">
-                  <Image src="/icons/fb.png" height={50} width={50} />
-                  <Image src="/icons/linkedin.png" height={50} width={50} />
-
-                  <Image src="/icons/ig.png" height={50} width={50} />
-                  <Image src="/icons/yt.png" height={50} width={50} />
+                  <Link href="https://www.facebook.com/onelifetourism">
+                    <Image src="/icons/fb.png" height={50} width={50} />
+                  </Link>
+                  <Link href="https://www.linkedin.com/company/onelifetourism">
+                    <Image src="/icons/linkedin.png" height={50} width={50} />
+                  </Link>
+                  <Link href="https://www.instagram.com/one_life_tourism/">
+                    <Image src="/icons/ig.png" height={50} width={50} />
+                  </Link>
+                  <Link href="https://www.youtube.com/channel/UCwdyYkY5eVkhNYAB6Imx3Xw">
+                    <Image src="/icons/yt.png" height={50} width={50} />
+                  </Link>
                 </div>
                 <div className="flex mt-8 items-center justify-center">
                   <Image
@@ -211,7 +218,7 @@ const Footer = () => {
                   />
                   <a
                     href="tel:+971547082256"
-                    className="text-orange font-bold text-lg lg:text-[32px] lg:ml-2 no-underline"
+                    className="text-orange hover:text-black font-bold text-lg lg:text-[32px] lg:ml-2 no-underline"
                   >
                     (+971) 54 708 2256
                   </a>

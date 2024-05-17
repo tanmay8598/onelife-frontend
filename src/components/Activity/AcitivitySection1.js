@@ -4,6 +4,49 @@ import Image from "next/image";
 const AcitivitySection1 = () => {
   return (
     <section className="bg-white">
+      {/* top section  */}
+
+      <div className=" mx-auto max-w-screen-2xl  sm:px-6 lg:mt-40 text-center">
+        <p className="lg:text-3xl font-bold mt-5">
+          Authorized Reseller Partner for
+        </p>
+        <div className="lg:flex flex-col items-center lg:mt-20">
+          <div className="hidden lg:flex z-10   items-center justify-center lg:justify-start flex-wrap gap-5 lg:gap-7 mt-10">
+            <Image src="/activities/ll11.png" height={90} width={213} />
+            <Image src="/activities/ll2.png" height={105} width={211} />
+            <Image src="/activities/mg.png" height={90} width={253} />
+            <Image src="/activities/realMadrid.png" height={98} width={182} />
+          </div>
+          <div className="hidden lg:flex z-10   items-center justify-center lg:justify-start flex-wrap gap-5 lg:gap-10 mt-10 lg:mt-20">
+            <Image src="/activities/ww1.png" height={146} width={212} />
+            <Image src="/activities/dp.png" height={122} width={180} />
+            <Image src="/activities/burj.png" height={152} width={153} />
+            <Image src="/activities/greenPlanet.png" height={89} width={285} />
+          </div>
+          <div className="lg:hidden flex items-center justify-center lg:justify-start flex-wrap gap-5 lg:gap-10 mt-10">
+            <Image src="/activities/ll1.png" height={68} width={161} />
+            <Image src="/activities/ll2.png" height={79} width={159} />
+            <Image src="/activities/mg.png" height={68} width={191} />
+            <Image src="/activities/realMadrid.png" height={74} width={137} />
+            <Image src="/activities/ww.png" height={110} width={160} />
+            <Image src="/activities/dp.png" height={92} width={136} />
+            <Image src="/activities/burj.png" height={115} width={120} />
+            <Image src="/activities/greenPlanet.png" height={67} width={215} />
+          </div>
+          <div className="flex items-center justify-center lg:justify-start flex-wrap gap-5 lg:gap-10 mt-10">
+            <div className="flex flex-wrap lg:mt-5">
+              <a
+                href="/activities"
+                className="text-center tracking-wide border-2 border-black border-solid block mt-5 lg:mt-0  rounded bg-white px-12 py-3 text-sm font-extrabold  focus:outline-none focus:ring  sm:w-auto no-underline text-black lg:text-md "
+              >
+                Talk To us for Great deals
+                <Image src="/arrow.png" height={9} width={8} className="ml-1" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="flex relative flex-col  mx-auto max-w-screen-2xl  py-10 sm:px-6 lg:flex lg:h-full  lg:mb-40 lg:mt-20 ">
         {/* heading  */}
         <div>

@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const VisaHero = () => {
   return (
@@ -29,14 +30,17 @@ const VisaHero = () => {
           width={1000}
           className="absolute object-contain hidden  lg:block lg:-top-44 lg:right-10"
         /> */}
-        <div className="relative h-[52px]  w-[220px]  cursor-pointer mt-10 lg:mt-10">
+        <Link
+          href="https://maps.app.goo.gl/kXUh3eeHKDHZ4eqj7"
+          className="relative h-[52px]  w-[220px]  cursor-pointer mt-10 lg:mt-20"
+        >
           <Image
             src="/icons/clutch.png"
             alt="logo"
             priority={true}
             fill={true}
           />
-        </div>
+        </Link>
       </div>
     </section>
   );
