@@ -11,7 +11,7 @@ const Navbar = () => {
   const handleScroll = () => {
     const scroll = window.scrollY;
 
-    const shouldBeVisible = scroll <= 50;
+    const shouldBeVisible = scroll <= 150;
     setIsVisible(shouldBeVisible);
   };
 
@@ -21,7 +21,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className="w-full bg-bgLight sticky top-0 z-50">
+    <header className="w-full bg-bgLight fixed top-0 z-50">
       {/* nav top */}
       <div
         className={`hidden bg-red h-[54px] top-0 z-10 transition-all  ease-in-out duration-200 ${
@@ -37,10 +37,16 @@ const Navbar = () => {
             </p>
           </div>
           <div className="flexCenter mt-2">
-            <Link href="https://www.facebook.com/onelifetourism">
+            <Link
+              href="https://www.facebook.com/onelifetourism"
+              target="_blank"
+            >
               <Image src="/fb1.png" alt="logo" width={25} height={25} />
             </Link>
-            <Link href="https://www.instagram.com/one_life_tourism/">
+            <Link
+              href="https://www.instagram.com/one_life_tourism/"
+              target="_blank"
+            >
               <Image
                 src="/ig.png"
                 alt="logo"
@@ -49,7 +55,10 @@ const Navbar = () => {
                 className="ml-2"
               />
             </Link>
-            <Link href="https://www.linkedin.com/company/onelifetourism">
+            <Link
+              href="https://www.linkedin.com/company/onelifetourism"
+              target="_blank"
+            >
               <Image
                 src="/linkedin.png"
                 alt="logo"
@@ -58,7 +67,10 @@ const Navbar = () => {
                 className="ml-2"
               />
             </Link>
-            <Link href="https://www.youtube.com/channel/UCwdyYkY5eVkhNYAB6Imx3Xw">
+            <Link
+              href="https://www.youtube.com/channel/UCwdyYkY5eVkhNYAB6Imx3Xw"
+              target="_blank"
+            >
               <Image
                 src="/yt.png"
                 alt="logo"

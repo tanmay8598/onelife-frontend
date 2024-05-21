@@ -1,6 +1,7 @@
 "use client";
 import apiClient from "@/api/client";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -73,7 +74,7 @@ const page = () => {
               className="h-7 w-7 lg:h-[28px] lg:w-[28px] mr-5"
             />
             <p className="text-lg lg:text-[22px]  font-medium">
-              Visa Related: (+971) 54 708 2256
+              Visa Related: (+971) 543656794
             </p>
           </div>
           <div className="flex  mt-2 lg:mt-5 items-center w-full">
@@ -121,11 +122,30 @@ const page = () => {
           </a>
 
           <div className="mt-5 lg:mt-9 w-full flex gap-5">
-            <Image src="/icons/fb.png" height={50} width={50} />
-            <Image src="/icons/twitter.png" height={50} width={50} />
-            <Image src="/icons/tiktok.png" height={50} width={50} />
-            <Image src="/icons/ig.png" height={50} width={50} />
-            <Image src="/icons/yt.png" height={50} width={50} />
+            <Link
+              href="https://www.facebook.com/onelifetourism"
+              target="_blank"
+            >
+              <Image src="/icons/fb.png" height={50} width={50} />
+            </Link>
+            <Link
+              href="https://www.linkedin.com/company/onelifetourism"
+              target="_blank"
+            >
+              <Image src="/icons/linkedin.png" height={50} width={50} />
+            </Link>
+            <Link
+              href="https://www.instagram.com/one_life_tourism/"
+              target="_blank"
+            >
+              <Image src="/icons/ig.png" height={50} width={50} />
+            </Link>
+            <Link
+              href="https://www.youtube.com/channel/UCwdyYkY5eVkhNYAB6Imx3Xw"
+              target="_blank"
+            >
+              <Image src="/icons/yt.png" height={50} width={50} />
+            </Link>
           </div>
         </div>
 

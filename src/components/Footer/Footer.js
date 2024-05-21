@@ -196,16 +196,28 @@ const Footer = () => {
                   Let’s Be Friend
                 </p>
                 <div className="mt-2 lg:mt-7 w-full flex gap-6 items-center justify-center">
-                  <Link href="https://www.facebook.com/onelifetourism">
+                  <Link
+                    href="https://www.facebook.com/onelifetourism"
+                    target="_blank"
+                  >
                     <Image src="/icons/fb.png" height={50} width={50} />
                   </Link>
-                  <Link href="https://www.linkedin.com/company/onelifetourism">
+                  <Link
+                    href="https://www.linkedin.com/company/onelifetourism"
+                    target="_blank"
+                  >
                     <Image src="/icons/linkedin.png" height={50} width={50} />
                   </Link>
-                  <Link href="https://www.instagram.com/one_life_tourism/">
+                  <Link
+                    href="https://www.instagram.com/one_life_tourism/"
+                    target="_blank"
+                  >
                     <Image src="/icons/ig.png" height={50} width={50} />
                   </Link>
-                  <Link href="https://www.youtube.com/channel/UCwdyYkY5eVkhNYAB6Imx3Xw">
+                  <Link
+                    href="https://www.youtube.com/channel/UCwdyYkY5eVkhNYAB6Imx3Xw"
+                    target="_blank"
+                  >
                     <Image src="/icons/yt.png" height={50} width={50} />
                   </Link>
                 </div>
