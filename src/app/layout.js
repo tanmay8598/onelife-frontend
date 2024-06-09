@@ -28,7 +28,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${poppins.variable} ${pacifico.variable}`}>
         <link rel="icon" href="/favicon.png" sizes="any" />
-
         <Navbar />
         <script
           dangerouslySetInnerHTML={{
