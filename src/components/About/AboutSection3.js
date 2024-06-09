@@ -80,7 +80,7 @@ const AboutSection3 = () => {
                 href="tel:+971547082256"
                 className="text-yellow font-bold lg:text-[38px] no-underline"
               >
-                (+971) 54 708 2256
+                (+971) 046-121-340
               </a>
             </div>
           </div>

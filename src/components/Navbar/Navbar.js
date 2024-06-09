@@ -106,7 +106,7 @@ const Navbar = () => {
               href="tel:+971547082256"
               className="text-lg font-bold text-darkBlue hover:text-orange ml-2 no-underline"
             >
-              (+971) 54-708-2256
+              (+971) 046-121-340
             </a>
           </div>
           <Image

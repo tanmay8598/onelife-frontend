@@ -232,7 +232,7 @@ const Footer = () => {
                     href="tel:+971547082256"
                     className="text-orange hover:text-black font-bold text-lg lg:text-[32px] lg:ml-2 no-underline"
                   >
-                    (+971) 54 708 2256
+                    (+971) 046 121 340
                   </a>
                 </div>
               </div>

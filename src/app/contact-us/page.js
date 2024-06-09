@@ -96,7 +96,7 @@ const page = () => {
               className="h-7 w-7 lg:h-[28px] lg:w-[28px] mr-5"
             />
             <p className="text-lg lg:text-[22px]  font-medium">
-              For Other Enquiries: (+971) 547082256
+              For Other Enquiries: (+971) 046121340
             </p>
           </div>
           <div className="flex mt-5 lg:mt-10 items-center">
